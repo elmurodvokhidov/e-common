@@ -1,0 +1,765 @@
+/* Laptop 1415 */
+@media (max-width: 1414px) {
+    th {
+        padding: 35px;
+    }
+    td {
+        padding: 35px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 95px 115px 150px 100px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 105px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 78px;
+    }
+    .hS6TWC_img {
+        width: 100%;
+    }
+    .hS6TWC_img img {
+        width: 100%;
+    }
+    /* Skeleton */
+    .skeletonCard {
+        width: 270px;
+        height: 350px;
+    }
+    .sC_img {
+        height: 271px;
+    }
+    .sC_title {
+        width: 218px;
+        height: 26px;
+    }
+    .sC_stars {
+        width: 122px;
+        height: 15px;
+    }
+    .sC_footer {
+        width: 218px;
+        height: 31px;
+    }
+}
+
+/* Laptop 1380 */
+@media (max-width: 1381px) {
+    /* Navbar */
+    .navbar {
+        padding: 28px 105px;
+    }
+    /* Home Section 1 */
+    .h_section1 {
+        padding-left: 105px;
+    }
+    .h_section1 h1 {
+        width: 45%;
+        font-size: 64px;
+        line-height: 149%;
+    }
+    /* Home page 'ning barcha section 'lari */
+    .h_section {
+        padding: 0px 105px;
+    }
+    .hS2WC_header {
+        top: 25px;
+    }
+    .hS2WC_main {
+        bottom: 65px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 145px 150px 50px 130px;
+    }
+    /* Basket */
+    .basket {
+        padding: 120px 105px 160px 105px;
+    }
+    /* Contact */
+    .contact {
+        padding: 120px 100px;
+    }
+    .cWLC_text {
+        top: 50px;
+        right: 30px;
+        gap: 110px;
+    }
+    .cWLC_text h1 {
+        font-size: 33px;
+    }
+    .cWLC_text p {
+        font-size: 13px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 90px 125px 145px 95px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 100px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 76px;
+    }
+    .addPage .accFF {
+        width: 42%;
+    }
+}
+
+/* Laptop 1365 */
+@media (max-width: 1366px) {
+    /* Home Section 1 */
+    .h_section1 {
+        padding-left: 100px;
+    }
+    /* Home page 'ning barcha section 'lari */
+    .h_section {
+        padding: 0px 100px;
+    }
+    .hS2WC_header {
+        top: 20px;
+    }
+    .hS2WC_main {
+        bottom: 60px;
+    }
+    .hS4_right {
+        bottom: 95px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 140px 145px 45px 125px;
+    }
+    /* Basket */
+    .basket {
+        padding: 120px 100px 160px 100px;
+    }
+    .pages {
+        gap: 95px;
+    }
+    th {
+        padding: 30px;
+    }
+    td {
+        padding: 30px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 85px 120px 140px 90px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 95px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 74px;
+    }
+}
+
+/* Laptop 1322 */
+@media (max-width: 1321px) {
+    /* Home Section 1 */
+    .h_section1 {
+        padding-left: 95px;
+    }
+    /* Home page 'ning barcha section 'lari */
+    .h_section {
+        padding: 0px 95px;
+    }
+    .hS2WC_header {
+        top: 15px;
+    }
+    .hS2WC_main {
+        bottom: 55px;
+    }
+    .hS4_right {
+        bottom: 90px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 135px 140px 40px 120px;
+    }
+    /* Basket */
+    .basket {
+        padding: 115px 95px 155px 95px;
+    }
+    .pages {
+        gap: 90px;
+        font-size: 23px;
+    }
+    th {
+        padding: 25px;
+    }
+    td {
+        padding: 25px;
+    }
+    .hS2W_card h3 {
+        font-size: 18px;
+    }
+    .hS2W_card h4 {
+        font-size: 16px;
+    }
+    .hS2W_card h2 {
+        font-size: 25px;
+    }
+    .hS3_top h1 {
+        font-size: 38px;
+        padding: 0px 0px 20px 0px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 80px 115px 135px 85px;
+    }
+    /* Contact */
+    .contact {
+        padding: 115px 90px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 90px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 72px;
+    }
+    .add form h1::before {
+        left: 55px;
+    }
+    .hW_right .h_section4 {
+        padding: 0px 90px;
+    }
+    .hW_right .h_section4 h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .hW_right .h_section4 p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .hW_right .hS4L_bottom span a {
+        font-size: 13px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .hW_right .hS4_right {
+        bottom: 30px;
+    }
+}
+
+/* Laptop 1282 */
+@media (max-width: 1381px) {
+    /* Home Section 1 */
+    .h_section1 {
+        padding-left: 90px;
+    }
+    .h_section1 h1 {
+        width: 48%;
+        font-size: 62px;
+        line-height: 148%;
+    }
+    /* Home page 'ning barcha section 'lari */
+    .h_section {
+        padding: 0px 90px;
+    }
+    .hS2WC_main {
+        bottom: 50px;
+    }
+    .hS4_right {
+        bottom: 75px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 130px 135px 35px 115px;
+    }
+    /* Basket */
+    .basket {
+        padding: 110px 90px 150px 90px;
+    }
+    .pages {
+        gap: 85px;
+        font-size: 22px;
+    }
+    th {
+        padding: 20px;
+    }
+    td {
+        padding: 20px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 75px 110px 130px 80px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 85px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 70px;
+    }
+    /* Add */
+    .add form {
+        width: 30%;
+    }
+}
+
+/* Laptop 1242 */
+@media (max-width: 1343px) {
+    /* FOOTER */
+    .footer {
+        padding: 125px 130px 30px 110px;
+    }
+    th {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    td {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 70px 105px 125px 75px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 80px;
+    }
+    /* Contact */
+    .contact {
+        padding: 110px 80px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 68px;
+    }
+}
+
+/* Laptop 1222 */
+@media (max-width: 1222px) {
+    th {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    td {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 65px 80px 120px 70px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 75px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 66px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 120px 125px 25px 105px;
+    }
+    .addPage .accFF {
+        width: 45%;
+    }
+}
+
+/* Laptop 1202 */
+@media (max-width: 1202px) {
+    /* FOOTER */
+    .footer {
+        padding: 115px 120px 20px 100px;
+    }
+    th {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    td {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 65px 100px 120px 70px;
+    }
+    /* SECTION 4 */
+    .h_section4 {
+        padding: 0px 90px;
+    }
+    .hS4_left h1 {
+        font-size: 54px;
+        line-height: 80px;
+    }
+    .hS4L_bottom p {
+        font-size: 23px;
+        line-height: 34px;
+    }
+    .hS4L_bottom a {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 75px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 66px;
+    }
+    .hS6S_content input {
+        font-size: 19px;
+        padding: 17px;
+    }
+    .hS6S_content button {
+        padding: 0px 27px;
+        font-size: 19px;
+        line-height: 28px;
+    }
+    .dW_card:last-child {
+        display: none;
+    }
+    .dropDown::before {
+        top: -5px;
+        left: 20%;
+    }
+    /* Section 6 */
+    .hS6TWC_right h3 {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .hS6TWCR_title h2 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .hS6TWCR_title p {
+        font-size: 17px;
+        line-height: 21px;
+        padding: 0px 30px 0px 0px;
+    }
+    /* Contact */
+    .contact {
+        padding: 105px 75px;
+    }
+    .cWLC_text {
+        top: 48px;
+        right: 28px;
+        gap: 100px;
+    }
+    .cWLC_text h1 {
+        font-size: 32px;
+    }
+    .cWLC_text p {
+        font-size: 12px;
+    }
+    /* Add */
+    .add form {
+        width: 32%;
+    }
+}
+
+/* Laptop 1120px */
+@media (max-width: 1120px) {
+    /* Navbar */
+    .navbar {
+        padding: 25px 70px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 90px 90px 18px 80px;
+    }
+    /* Home Section 1 */
+    .h_section1 {
+        padding-left: 70px;
+    }
+    .h_section1 h1 {
+        width: 48%;
+        font-size: 60px;
+        line-height: 145%;
+    }
+    .hS2W_card h3 {
+        font-size: 16px;
+    }
+    .hS2W_card h4 {
+        font-size: 14px;
+    }
+    .hS2W_card h2 {
+        font-size: 22px;
+    }
+    .hS3_top h1 {
+        font-size: 35px;
+    }
+    .hS4_left h1 {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .hS4L_bottom p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hS4L_bottom a {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .hS4_right {
+        bottom: 55px;
+    }
+    /* SECTION 5 */
+    .h_section5 {
+        padding: 50px;
+    }
+    .hS5WC_title h2 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .hS5WC_about {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .hS5_wrapper {
+        padding: 0px 30px;
+    }
+    /* Top */
+    .hS6_top {
+        gap: 60px;
+    }
+    .h_section6 h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    /* Section 6 */
+    .hS6TWC_right h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .hS6TWCR_title h2 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .hS6TWCR_title p {
+        font-size: 15px;
+        line-height: 19px;
+        padding: 0px 25px 0px 0px;
+    }
+}
+
+/* Laptop 1024px */
+@media (max-width: 1025px) {
+    /* Navbar */
+    .navbar {
+        padding: 20px 50px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 70px 60px 15px 50px;
+    }
+    .lang button {
+        font-size: 17px;
+    }
+    .nH_right {
+        font-size: 18px;
+    }
+    .search {
+        padding: 2px 5px;
+    }
+    .search input {
+        font-size: 17px;
+    }
+    .search button {
+        font-size: 17px;
+    }
+    .pages {
+        gap: 75px;
+        font-size: 20px;
+    }
+    .deal h1 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .deal button {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .price h1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .price h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hW_right .h_section4 {
+        padding: 0px 40px;
+    }
+    .hW_right .h_section4 h1 {
+        font-size: 19px;
+        line-height: 35px;
+    }
+    .hW_right .h_section4 p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .hW_right .hS4L_bottom span a {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .hW_right .hS4_right {
+        bottom: 25px;
+    }
+    .hS4_left {
+        gap: 10px;
+    }
+    /* Select */
+    /* Left */
+    .s_left {
+        gap: 40px;
+        padding: 10px 15px;
+    }
+    .sortBy {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    /* Right */
+    .s_right {
+        gap: 5px;
+        padding: 0px 15px 0px 0px;
+    }
+    .s_right button {
+        font-size: 28px;
+    }
+    .s_cardWrapper {
+        grid-template-columns: repeat(2, 48%);
+        gap: 35px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 65px 50px 120px 50px;
+    }
+    .hS4_left h1 {
+        font-size: 35px;
+        line-height: 65px;
+    }
+    .hS4L_bottom p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hS4L_bottom a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hS3_bottom button {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    /* Section 6 */
+    .hS6TWC_right h3 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .hS6TWCR_title h2 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .hS6TWCR_title p {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0px 20px 0px 0px;
+    }
+    .h_section6 h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .hS6BWC_right {
+        gap: 15px;
+    }
+    .hS6BWC_right h2 {
+        font-size: 19px;
+        line-height: 22px;
+    }
+    .hS6BWC_right h4 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .hS6BWC_right h4 del {
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .hS6BWC_right .starRating label {
+        font-size: 15px;
+    }
+    .hS6BWC_img {
+        width: 100%;
+    }
+    .hS6BWC_img img {
+        width: 100%;
+    }
+    .hS5W_card {
+        gap: 10px;
+        padding: 0px 5px;
+    }
+    .hS5WC_img {
+        padding: 0px 0px 15px 0px;
+    }
+    .hS5WC_title h2 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .hS5WC_about {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .hS6S_content input {
+        font-size: 16px;
+        padding: 14px;
+    }
+    .hS6S_content button {
+        padding: 0px 25px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    /* Home Section 1 */
+    .h_section1 h1 {
+        width: 40%;
+        font-size: 40px;
+        line-height: 140%;
+    }
+    .h_section1 {
+        padding: 140px 0px 200px 70px;
+    }
+}
+
+/* Laptop 930px */
+@media (max-width: 930px) {
+    .hW_left {
+        width: 35%;
+    }
+    .hW_right {
+        width: 100%;
+    }
+    .priceRange div {
+        width: 100%;
+    }
+    .pages {
+        gap: 60px;
+        font-size: 19px;
+    }
+    /* DorpDown */
+    .dropDown {
+        width: 90%;
+        left: 8%;
+        padding: 30px 35px 35px 50px;
+    }
+    .dWC_main {
+        gap: 40px;
+    }
+    .dropDown::before {
+        top: -5px;
+        left: 26%;
+    }
+}
