@@ -11,7 +11,7 @@ export function Skeleton({ type }) {
         counter = 12;
     }
 
-    const FeedSkeleton = () => (
+    const Skeleton = () => (
         <div className="skeletonCard">
             <div className="sC_img"></div>
             <div className="sC_title"></div>
@@ -19,5 +19,5 @@ export function Skeleton({ type }) {
             <div className="sC_footer"></div>
         </div>
     )
-    if (type === 'feed' || type === 'skeleton3' || type === 'skeleton4') return Array(counter).fill(<FeedSkeleton />)
+    if (type === 'skeleton' || type === 'skeleton3' || type === 'skeleton4') return Array(counter).fill(<Skeleton />)
 }

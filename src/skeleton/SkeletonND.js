@@ -2,7 +2,7 @@ export function SkeletonND({ type }) {
 
     const counter = 4;
 
-    const FeedSkeleton = () => (
+    const Skeleton = () => (
         <div className="skeletonCard1">
             <div className="sC1_left"></div>
             <div className="sC1_right">
@@ -22,5 +22,5 @@ export function SkeletonND({ type }) {
             </div>
         </div>
     )
-    if (type === 'feed') return Array(counter).fill(<FeedSkeleton />)
+    if (type === 'skeleton') return Array(counter).fill(<Skeleton />)
 }

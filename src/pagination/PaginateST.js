@@ -57,7 +57,7 @@ export function PaginateST() {
             <div className="paginateWrapper1 s_cardWrapper">
                 {
                     loading ?
-                        <Skeleton type='feed' />
+                        <Skeleton type='skeleton' />
                         :
                         currentItems
                             .filter((item) => {

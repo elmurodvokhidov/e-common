@@ -57,7 +57,7 @@ export function PaginateND() {
             <div className="paginateWrapper2 fully_wrapper">
                 {
                     loading ?
-                        <SkeletonND type='feed' />
+                        <SkeletonND type='skeleton' />
                         :
                         currentItems
                             .filter((item) => {
