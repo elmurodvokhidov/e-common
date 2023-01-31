@@ -81,7 +81,12 @@ export function HotDeal() {
     };
 
     // console.log(show);
-
+    
+    let airmax = allInfo.filter(a => a.caty === 'airmax');
+    let nike = allInfo.filter(a => a.caty === 'nike');
+    let vans = allInfo.filter(a => a.caty === 'vans');
+    let adidas = allInfo.filter(a => a.caty === 'adidas');
+    
     return (
         <>
             <Navbar text={'Hot Deal'} invisibleInp={'invisibleInp'} modal={'modalInv'} />
@@ -97,23 +102,23 @@ export function HotDeal() {
                             </div> */}
                             <div className="dealContent">
                                 <button value={'airmax'} onClick={(e) => setCaty(e.target.value)}>Airmax</button>
-                                <span>45</span>
+                                <span>{airmax.length}</span>
                             </div>
                             <div className="dealContent">
                                 <button value={'nike'} onClick={(e) => setCaty(e.target.value)}>Nike</button>
-                                <span>45</span>
+                                <span>{nike.length}</span>
                             </div>
                             {/* <div className="dealContent">
                                 <button value={'adidas'} onClick={(e) => setCaty(e.target.value)}>Adidas</button>
-                                <span>45</span>
+                                <span>{adidas.length}</span>
                             </div> */}
                             <div className="dealContent">
                                 <button value={'vans'} onClick={(e) => setCaty(e.target.value)}>Vans</button>
-                                <span>45</span>
+                                <span>{vans.length}</span>
                             </div>
                             <div className="dealContent">
                                 <button value={'adidas'} onClick={(e) => setCaty(e.target.value)}>Adidas</button>
-                                <span>45</span>
+                                <span>{adidas.length}</span>
                             </div>
                             <div className="dealContent">
                                 <button value={''} onClick={(e) => setCaty(e.target.value)}>Clear</button>
