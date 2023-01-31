@@ -2532,6 +2532,17 @@ td {
 
 /* ------------------ Media --------------------------------------------------------------------------------------------------- */
 
+/* Laptop 1440 */
+@media (max-width:1441px) {
+    .sC1RM_about {
+        width: 560px;
+    }
+    /* Hot Deal */
+    .hotDeal {
+        padding: 95px 125px 150px 100px;
+    }
+}
+
 /* Laptop 1415 */
 @media (max-width: 1414px) {
     th {
@@ -3080,6 +3091,19 @@ td {
         font-size: 15px;
         line-height: 19px;
         padding: 0px 25px 0px 0px;
+    }
+}
+
+/* Laptop 1070px */
+@media (max-width: 1071px) {
+    .hW_left {
+        width: 25%;
+    }
+    .hW_right {
+        width: 100%;
+    }
+    .priceRange div {
+        width: 100%;
     }
 }
 
@@ -4913,7 +4937,10 @@ td {
     .moreBtn {
         display: none;
     }
-    .show {
+    /* .show {
+        display: none;
+    } */
+    .sort1 {
         display: none;
     }
     .s_left {
@@ -6502,7 +6529,10 @@ td {
     .moreBtn {
         display: none;
     }
-    .show {
+    /* .show {
+        display: none;
+    } */
+    .sort1 {
         display: none;
     }
     .s_left {

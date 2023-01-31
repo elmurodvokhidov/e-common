@@ -189,7 +189,7 @@ export function HotDeal() {
                         <div className="selectSort">
                             <div className="s_left">
                                 <h1 className="sortBy">{allInfo.length} Items</h1>
-                                <div className="sortBy">
+                                <div className="sortBy sort1">
                                     <Box sx={{ minWidth: 120 }}>
                                         <FormControl fullWidth>
                                             <InputLabel id="demo-simple-select-label">Sort</InputLabel>
