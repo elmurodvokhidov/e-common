@@ -269,7 +269,7 @@ function ContextFunc({ children }) {
     // console.log(allInfo);
 
     // Username va Password'ni Loacal key sifatida ishlatish
-    var userProduct = info[0].profile[0].username + info[0].profile[0].password
+    var userProduct = info[0]?.profile[0]?.username + info[0]?.profile[0]?.password
 
     const [payModal, setPayModal] = useState(false);
     const [goToState, setGoToState] = useState({
