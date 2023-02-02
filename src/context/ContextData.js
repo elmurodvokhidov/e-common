@@ -222,7 +222,7 @@ function ContextFunc({ children }) {
         {
             favorite: JSON.parse(localStorage.getItem('favorite')) || [],
             basket: JSON.parse(localStorage.getItem('basket')) || [],
-            hotDeal: JSON.parse(localStorage.getItem('hotDealState')),
+            hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'true'),
             loadMore: localStorage.getItem('loadMoreState') ? JSON.parse(localStorage.getItem('loadMoreState')) : localStorage.setItem('loadMoreState', 'true'),
             profile: JSON.parse(localStorage.getItem('profile')) || [],
             // footer: JSON.parse(localStorage.getItem('footer')) || localStorage.setItem('footer', 'true'),
@@ -241,7 +241,7 @@ function ContextFunc({ children }) {
             {
                 favorite: JSON.parse(localStorage.getItem('favorite')) || [],
                 basket: JSON.parse(localStorage.getItem('basket')) || [],
-                hotDeal: JSON.parse(localStorage.getItem('hotDealState')),
+                hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'true'),
                 loadMore: localStorage.getItem('loadMoreState') ? JSON.parse(localStorage.getItem('loadMoreState')) : localStorage.setItem('loadMoreState', 'true'),
                 profile: JSON.parse(localStorage.getItem('profile')) || [],
                 // footer: JSON.parse(localStorage.getItem('footer')) || localStorage.setItem('footer', 'true'),
