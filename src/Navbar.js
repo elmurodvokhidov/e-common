@@ -25,7 +25,7 @@ export function Navbar(prop) {
                 <div className="hamburger" id={prop.modal} onClick={() => setModalFP(true)}><span><HiOutlineMenu /></span></div>
                 <div className="pN_input" id={prop.invisibleInp}>
                     <label htmlFor="search"><AiOutlineSearch /></label>
-                    <input type="search" name="search" id="search" placeholder="Search Product" />
+                    <input type="text" name="search" id="search" placeholder="Search Product" />
                 </div>
                 <ul className="pN_right">
                     <li className="iconPerson" onClick={profileFunc}><span><BsPerson /></span></li>
@@ -85,7 +85,7 @@ export function Navbar(prop) {
                         <li><NavLink to={'/basket'} className="basketNavIcon"><span><SlBasket /></span><span>{info[0].basket.length}</span></NavLink></li>
                         <li className="items"><NavLink to={'/favorite'} className="favoriteLink"><span>Favorite</span><span>{info[0].favorite.length}</span></NavLink></li>
                         <li className="search">
-                            <input type="search" name="search" id="search" placeholder="$0.00" />
+                            <input type="text" name="search" id="search" placeholder="$0.00" />
                             <button><AiOutlineSearch /></button>
                         </li>
                     </ul>
