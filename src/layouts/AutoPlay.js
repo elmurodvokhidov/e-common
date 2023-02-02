@@ -15,7 +15,6 @@ export function AutoPlay() {
     };
     return (
         <div className="autoPlay">
-            <Slider {...settings}>
                 <div className="aP_card">
                     <figure className="aP_img"><img src="./img/Product Picture01.png" alt="image1" /></figure>
                     <div className="aPC_footer">
@@ -27,29 +26,6 @@ export function AutoPlay() {
                         </div>
                     </div>
                 </div>
-                <div className="aP_card">
-                    <figure className="aP_img"><img src="./img/Product Picture02.png" alt="image2" /></figure>
-                    <div className="aPC_footer">
-                        <div className="starRating">
-                            <BasicRating />
-                        </div>
-                        <div className="bSC_footer">
-                            <h4><span>$499</span><del>$599</del></h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="aP_card">
-                    <figure className="aP_img"><img src="./img/Product Picture03.png" alt="image3" /></figure>
-                    <div className="aPC_footer">
-                        <div className="starRating">
-                            <BasicRating />
-                        </div>
-                        <div className="bSC_footer">
-                            <h4><span>$499</span><del>$599</del></h4>
-                        </div>
-                    </div>
-                </div>
-            </Slider>
         </div>
     );
 }

@@ -138,6 +138,36 @@ export function HotDealInner() {
         setAge(event.target.value);
     };
 
+    // Increment Function
+    function incFuncHI(item) {
+        localStorage.setItem(
+            'aboutProduct',
+            JSON.stringify(
+                JSON.parse(localStorage.getItem('aboutProduct')).map(
+                    foo => foo.id === item.id ?
+                        { ...foo, count: +foo.count + 1 } : foo
+                )
+            )
+        )
+        refresh();
+    }
+
+    // Decrement Function
+    function decFuncHI(item) {
+        if (item.count > 0) {
+            localStorage.setItem(
+                'aboutProduct',
+                JSON.stringify(
+                    JSON.parse(localStorage.getItem('aboutProduct')).map(
+                        foo => foo.id === item.id ?
+                            { ...foo, count: +foo.count - 1 } : foo
+                    )
+                )
+            )
+        }
+        refresh();
+    }
+
     return (
         <>
             <Navbar invisibleInp={'invisibleInp'} modal={'modalInv'} text={info[0].aboutProduct[0].title.length > 12 ? info[0].aboutProduct[0].title.slice(0, 12) + '...' : info[0].aboutProduct[0].title} />
@@ -268,113 +298,151 @@ export function HotDealInner() {
             </div>
             <div className="product">
                 <div className="p_top">
-                    <div className="pT_content">
-                        <div className="pT_left">
-                            <div className="sliderOwn">
-                                <div className="sO_top">
-                                    <img src="./img/imageProduct2.png" alt="imageProduct2.png" />
-                                </div>
-                                <div className="sO_bottom">
-                                    <button><img src="./img/Product Picture02.png" alt="Product Picture02.png" /></button>
-                                    <button><img src="./img/Product Picture03.png" alt="Product Picture03.png" /></button>
-                                    <button><img src="./img/Product Picture02.png" alt="Product Picture02.png" /></button>
-                                    <button><img src="./img/Product Picture01.png" alt="Product Picture01.png" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pT_center">
-                            <div className="pTC_top">
-                                <h1>Nike Airmax 270 React</h1>
-                                <div className="pTCT_footer">
-                                    <div className="pTCTF_star"><BasicRating /></div>
-                                    <div className="pTCTF_num"><p>0 reviews</p></div>
-                                    <div className="pTCTF_link"><NavLink>Submit a review</NavLink></div>
-                                </div>
-                            </div>
-                            <div className="pTC_center">
-                                <div className="pTCC_footer">
-                                    <div className="bSC_footer">
-                                        <h4><span>$299,43</span><del>$534,33</del><span>24% Off</span></h4>
-                                    </div>
-                                    <div className="pTCCF_footer">
-                                        <div className="pTCCF_left">
-                                            <p>Availability:</p>
-                                            <p>Category:</p>
-                                            <p>Free shipping</p>
+                    {
+                        info[0]?.aboutProduct.map((item, index) => (
+                            <div className="pT_content" key={index}>
+                                <div className="pT_left">
+                                    <div className="sliderOwn">
+                                        <div className="sO_top">
+                                            <img src={item.img} alt={item.img} />
                                         </div>
-                                        <div className="pTCCF_left pTCCF_right">
-                                            <p>In stock</p>
-                                            <p>Accessories</p>
+                                        <div className="sO_bottom">
+                                            <button><img src="./img/Product Picture02.png" alt="Product Picture02.png" /></button>
+                                            <button><img src="./img/Product Picture03.png" alt="Product Picture03.png" /></button>
+                                            <button><img src="./img/Product Picture02.png" alt="Product Picture02.png" /></button>
+                                            <button><img src="./img/Product Picture01.png" alt="Product Picture01.png" /></button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="pTC_bottom">
-                                <div className="pTCB_header">
-                                    <h1>Select Color:</h1>
-                                    <div className="colorSelect">
-                                        <Radio {...controlProps('a')} />
-                                        <Radio {...controlProps('b')} color="secondary" />
-                                        <Radio {...controlProps('c')} color="success" />
-                                        <Radio
-                                            {...controlProps('e')}
-                                            sx={{
-                                                '&.Mui-checked': {
-                                                    color: pink[600],
-                                                },
-                                            }}
-                                        />
+                                <div className="pT_center">
+                                    <div className="pTC_top">
+                                        <h1>{item.title}</h1>
+                                        <div className="pTCT_footer">
+                                            <div className="pTCTF_star"><BasicRating /></div>
+                                            <div className="pTCTF_num"><p>0 reviews</p></div>
+                                            <div className="pTCTF_link"><NavLink>Submit a review</NavLink></div>
+                                        </div>
+                                    </div>
+                                    <div className="pTC_center">
+                                        <div className="pTCC_footer">
+                                            <div className="bSC_footer">
+                                                <h4><span>${item.price}</span><del>$534,33</del><span>24% Off</span></h4>
+                                            </div>
+                                            <div className="pTCCF_footer">
+                                                <div className="pTCCF_left">
+                                                    <p>Availability:</p>
+                                                    <p>Category:</p>
+                                                    <p>Free shipping</p>
+                                                </div>
+                                                <div className="pTCCF_left pTCCF_right">
+                                                    <p>In stock</p>
+                                                    <p>Accessories</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="pTC_bottom">
+                                        <div className="pTCB_header">
+                                            <h1>Product Color:</h1>
+                                            <h1>{item.color === 'a' ? 'Blue' : '' || item.color === 'b' ? 'Purple' : '' ||
+                                                item.color === 'c' ? 'Green' : '' || item.color === 'd' ? 'Black' : '' ||
+                                                    item.color === 'e' ? 'Red' : ''}</h1>
+                                            {/* <div className="colorSelect">
+                                                <Radio {...controlProps('a')} />
+                                                <Radio {...controlProps('b')} color="secondary" />
+                                                <Radio {...controlProps('c')} color="success" />
+                                                <Radio
+                                                    {...controlProps('e')}
+                                                    sx={{
+                                                        '&.Mui-checked': {
+                                                            color: pink[600],
+                                                        },
+                                                    }}
+                                                />
+                                            </div> */}
+                                        </div>
+                                        {/* <div className="pTCB_footer">
+                                            <h1>Size</h1>
+                                            <div className="sortBy">
+                                                <Box sx={{ minWidth: 120 }}>
+                                                    <FormControl fullWidth>
+                                                        <InputLabel id="demo-simple-select-label">Size</InputLabel>
+                                                        <Select
+                                                            labelId="demo-simple-select-label"
+                                                            id="demo-simple-select"
+                                                            value={age}
+                                                            label="Age"
+                                                            onChange={handleChange2}
+                                                        >
+                                                            <MenuItem value="">
+                                                                <em>None</em>
+                                                            </MenuItem>
+                                                            <MenuItem value={'XS'}>XS</MenuItem>
+                                                            <MenuItem value={'XL'}>XL</MenuItem>
+                                                            <MenuItem value={'MS'}>MS</MenuItem>
+                                                        </Select>
+                                                    </FormControl>
+                                                </Box>
+                                            </div>
+                                        </div> */}
+                                    </div>
+                                    <div className="pTC_footer">
+                                        <div className="count">
+                                            <button onClick={() => decFuncHI(item)}>-</button>
+                                            <span>{item.count}</span>
+                                            <button onClick={() => incFuncHI(item)}>+</button>
+                                        </div>
+                                        <div className="PTCF_right">
+                                            <button onClick={() => basketFunc(item)}><span><SlBasket /></span> Add To Cart</button>
+                                            <button onClick={() => likeFunc(item)}><span><FaRegHeart /></span></button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="pTCB_footer">
-                                    <h1>Size</h1>
-                                    <div className="sortBy">
-                                        <Box sx={{ minWidth: 120 }}>
-                                            <FormControl fullWidth>
-                                                <InputLabel id="demo-simple-select-label">Size</InputLabel>
-                                                <Select
-                                                    labelId="demo-simple-select-label"
-                                                    id="demo-simple-select"
-                                                    value={age}
-                                                    label="Age"
-                                                    onChange={handleChange2}
-                                                >
-                                                    <MenuItem value="">
-                                                        <em>None</em>
-                                                    </MenuItem>
-                                                    <MenuItem value={'XS'}>XS</MenuItem>
-                                                    <MenuItem value={'XL'}>XL</MenuItem>
-                                                    <MenuItem value={'MS'}>MS</MenuItem>
-                                                </Select>
-                                            </FormControl>
-                                        </Box>
-                                    </div>
+                                <div className="pT_right">
+                                    <h1>BEST SELLER</h1>
+                                    <AutoPlay />
                                 </div>
                             </div>
-                            <div className="pTC_footer">
-                                <div className="count">
-                                    <button>-</button>
-                                    <span>2</span>
-                                    <button>+</button>
-                                </div>
-                                <div className="PTCF_right">
-                                    <button><span><SlBasket /></span> Add To Cart</button>
-                                    <button><span><FaRegHeart /></span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="pT_right">
-                            <h1>BEST SELLER</h1>
-                            <AutoPlay />
-                        </div>
-                    </div>
+                        ))
+                    }
                     <div className="pT_footer">
                         <button><span><ImFacebook /></span> <p>Share on Facebook</p></button>
                         <button><span><BsTwitter /></span> <p>Share on Twitter</p></button>
                     </div>
                 </div>
 
-                <div className="p_main">
+
+                {/* Leave comment */}
+                <div className="leaveComment">
+                    <h3 className="forTitleD">Latest comments</h3>
+                    <div className="writtenComment">
+                        <div className="wC_scroll">
+                            {
+                                info[0].comment.length > 0 ?
+                                    info[0].comment.map(baz => (
+                                        <div className="wC_card" key={baz.user}>
+                                            <div className="wCC_username">
+                                                <h1>{baz.user}</h1>
+                                            </div>
+                                            <div className="wCC_text">
+                                                <p>{baz.text}</p>
+                                            </div>
+                                            <h2>{baz.month} {baz.day}, {baz.year}</h2>
+                                        </div>
+                                    )) : <h4>Information not found!</h4>
+                            }
+                        </div>
+                    </div>
+
+                    <div className="writeComment">
+                        {/* <h1>Write Your Review</h1> */}
+                        <input onChange={(e) => commentCollect(e)} value={commentInp.user} type="email" name="user" id="user" placeholder='example@gmail.com' />
+                        <textarea onChange={(e) => commentCollect(e)} value={commentInp.text} name="text" id="comment" cols="30" rows="5" placeholder='Please write your opinion about the product here...'></textarea>
+                        <button onClick={(e) => commentSend(e)}>Send</button>
+                    </div>
+                </div>
+
+                {/* <div className="p_main">
                     <div className="pM_top">
                         <button className="pMT_tab">Product Infomation</button>
                         <button className="pMT_tab">Reviews <span>0</span></button>
@@ -385,7 +453,7 @@ export function HotDealInner() {
                         <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
                         <p>air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="p_bottom">
                     <h1>RELATED PRODUCTS</h1>

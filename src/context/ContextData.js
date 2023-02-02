@@ -255,17 +255,6 @@ function ContextFunc({ children }) {
         ])
     }
 
-    // All Informations
-    const [allInfo, setAllInfo] = useState([
-        ...info[0].userProduct,
-        ...bestSInfo,
-        ...HotDealInfo,
-        ...bagsInfo,
-        ...sneakersInfo,
-        ...beltInfo,
-        ...sunglassesInfo,
-    ]);
-    
     // console.log(allInfo);
 
     // Username va Password'ni Loacal key sifatida ishlatish
@@ -361,7 +350,7 @@ function ContextFunc({ children }) {
         else {
             Swal.fire(
                 'Warning!',
-                'Please fill in all the blanks!',
+                'This product is already in the basket',
                 'info'
             )
         }
@@ -399,7 +388,7 @@ function ContextFunc({ children }) {
         else {
             Swal.fire(
                 'Warning!',
-                'Please fill in all the blanks!',
+                'This product is already in the favorite',
                 'info'
             )
         }
@@ -580,6 +569,17 @@ function ContextFunc({ children }) {
             password: '',
         });
     }
+
+    // All Informations
+    const [allInfo, setAllInfo] = useState([
+        ...info[0]?.userProduct,
+        ...bestSInfo,
+        ...HotDealInfo,
+        ...bagsInfo,
+        ...sneakersInfo,
+        ...beltInfo,
+        ...sunglassesInfo,
+    ]);
 
     // Best Seller Component
     function BestSeller() {
