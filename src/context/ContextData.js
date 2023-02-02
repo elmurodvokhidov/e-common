@@ -22,198 +22,198 @@ function ContextFunc({ children }) {
     // Best Seller Informations
     const [bestSInfo, setBestSInfo] = useState([
         {
-            id: 'bestSellerId1', caty: 'nike', color: 'a', count: '0', img: './img/imageProduct3.png', title: 'Nike Air Max 270 React', price: 19, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId1', like: false, caty: 'nike', color: 'a', count: '0', img: './img/imageProduct3.png', title: 'Nike Air Max 270 React', price: 19, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId2', caty: 'airmax', color: 'b', count: '0', img: './img/imageProduct4.png', title: 'Airmax 270 React', price: 22, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId2', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/imageProduct4.png', title: 'Airmax 270 React', price: 22, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId3', caty: 'nike', color: 'a', count: '0', img: './img/imageProduct5.png', title: 'Nike Air Max 270 React', price: 30, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId3', like: false, caty: 'nike', color: 'a', count: '0', img: './img/imageProduct5.png', title: 'Nike Air Max 270 React', price: 30, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId4', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/imageProduct6.png', title: 'Adidas 270 React', price: 94, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId4', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/imageProduct6.png', title: 'Adidas 270 React', price: 94, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId5', caty: 'vans', color: 'd', count: '0', img: './img/Product Picture02.png', title: 'Vans Air Max 270 React', price: 43, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId5', like: false, caty: 'vans', color: 'd', count: '0', img: './img/Product Picture02.png', title: 'Vans Air Max 270 React', price: 43, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId6', caty: 'nike', color: 'a', count: '0', img: './img/Product Picture03.png', title: 'Nike Air Max 270 React', price: 23, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId6', like: false, caty: 'nike', color: 'a', count: '0', img: './img/Product Picture03.png', title: 'Nike Air Max 270 React', price: 23, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId7', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/Product Picture01.png', title: 'Adidas 270 React', price: 14, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId7', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/Product Picture01.png', title: 'Adidas 270 React', price: 14, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bestSellerId8', caty: 'nike', color: 'a', count: '0', img: './img/imageProduct6.png', title: 'Nike Air Max 270 React', price: 43, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bestSellerId8', like: false, caty: 'nike', color: 'a', count: '0', img: './img/imageProduct6.png', title: 'Nike Air Max 270 React', price: 43, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         }
     ]);
 
     // Informations
     const [HotDealInfo, setHotDealInfo] = React.useState([
         {
-            id: 'HotDealInfo1', caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct3.png', title: 'Airmax 270 React', price: 54, prev: '534,33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo1', like: false, caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct3.png', title: 'Airmax 270 React', price: 54, prev: '534,33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo2', caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 63, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo2', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 63, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo3', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/imageProduct5.png', title: 'Adidas 270 React', price: 72, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo3', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/imageProduct5.png', title: 'Adidas 270 React', price: 72, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo4', caty: 'vans', color: 'd', count: '0', like: false, img: './img/Product Picture02.png', title: 'Vans Air Max 270 React', price: 55, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo4', like: false, caty: 'vans', color: 'd', count: '0', like: false, img: './img/Product Picture02.png', title: 'Vans Air Max 270 React', price: 55, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo5', caty: 'nike', color: 'a', count: '0', like: false, img: './img/Product Picture03.png', title: 'Nike Air Max 270 React', price: 18, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo5', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/Product Picture03.png', title: 'Nike Air Max 270 React', price: 18, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo6', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/Product Picture01.png', title: 'Adidas 270 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo6', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/Product Picture01.png', title: 'Adidas 270 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo7', caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct6.png', title: 'Nike Air Max 270 React', price: 25, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo7', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct6.png', title: 'Nike Air Max 270 React', price: 25, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo8', caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct6.png', title: 'Airmax 270 React', price: 45, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo8', like: false, caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct6.png', title: 'Airmax 270 React', price: 45, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo9', caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 88, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo9', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 88, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo10', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/imageProduct3.png', title: 'Adidas 270 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo10', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/imageProduct3.png', title: 'Adidas 270 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo11', caty: 'vans', color: 'd', count: '0', like: false, img: './img/Product Picture03.png', title: 'Vans Air Max 270 React', price: 95, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo11', like: false, caty: 'vans', color: 'd', count: '0', like: false, img: './img/Product Picture03.png', title: 'Vans Air Max 270 React', price: 95, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo12', caty: 'nike', color: 'a', count: '0', like: false, img: './img/Product Picture01.png', title: 'Nike Air Max 270 React', price: 100, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo12', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/Product Picture01.png', title: 'Nike Air Max 270 React', price: 100, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo13', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/Product Picture02.png', title: 'Adidas 270 React', price: 81, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo13', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', like: false, img: './img/Product Picture02.png', title: 'Adidas 270 React', price: 81, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo14', caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 64, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo14', like: false, caty: 'nike', color: 'a', count: '0', like: false, img: './img/imageProduct4.png', title: 'Nike Air Max 270 React', price: 64, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'HotDealInfo15', caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct6.png', title: 'Airmax 270 React', price: 33, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'HotDealInfo15', like: false, caty: 'airmax', color: 'b', count: '0', like: false, img: './img/imageProduct6.png', title: 'Airmax 270 React', price: 33, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
     ]);
 
     // Bags Informations
     const [bagsInfo, setBagsInfo] = useState([
         {
-            id: 'bagsInfoId1', caty: 'nike', color: 'a', count: '0', img: './img/i.webp', title: 'Bag Max 300 React', price: 5, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId1', like: false, caty: 'nike', color: 'a', count: '0', img: './img/i.webp', title: 'Bag Max 300 React', price: 5, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId2', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (1).webp', title: 'Bag Adidas 300 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId2', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (1).webp', title: 'Bag Adidas 300 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId3', caty: 'vans', color: 'd', count: '0', img: './img/i (2).webp', title: 'Bag Vans 300 React', price: 25, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId3', like: false, caty: 'vans', color: 'd', count: '0', img: './img/i (2).webp', title: 'Bag Vans 300 React', price: 25, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId4', caty: 'nike', color: 'a', count: '0', img: './img/i (3).webp', title: 'Bag Max 300 React', price: 18, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId4', like: false, caty: 'nike', color: 'a', count: '0', img: './img/i (3).webp', title: 'Bag Max 300 React', price: 18, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId5', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (4).webp', title: 'Bag Adidas 300 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId5', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (4).webp', title: 'Bag Adidas 300 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId6', caty: 'nike', color: 'a', count: '0', img: './img/i (5).webp', title: 'Bag Max 300 React', price: 44, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId6', like: false, caty: 'nike', color: 'a', count: '0', img: './img/i (5).webp', title: 'Bag Max 300 React', price: 44, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId7', caty: 'airmax', color: 'b', count: '0', img: './img/i (6).webp', title: 'Bag Airmax 300 React', price: 52, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId7', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/i (6).webp', title: 'Bag Airmax 300 React', price: 52, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId8', caty: 'nike', color: 'a', count: '0', img: './img/i (7).webp', title: 'Bag Max 300 React', price: 50, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId8', like: false, caty: 'nike', color: 'a', count: '0', img: './img/i (7).webp', title: 'Bag Max 300 React', price: 50, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId9', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (8).webp', title: 'Bag Adidas 300 React', price: 28, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId9', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (8).webp', title: 'Bag Adidas 300 React', price: 28, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId10', caty: 'vans', color: 'd', count: '0', img: './img/i (9).webp', title: 'Bag Vans 300 React', price: 11, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId10', like: false, caty: 'vans', color: 'd', count: '0', img: './img/i (9).webp', title: 'Bag Vans 300 React', price: 11, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId11', caty: 'nike', color: 'a', count: '0', img: './img/i (10).webp', title: 'Bag Max 300 React', price: 21, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId11', like: false, caty: 'nike', color: 'a', count: '0', img: './img/i (10).webp', title: 'Bag Max 300 React', price: 21, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'bagsInfoId12', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (11).webp', title: 'Bag Adidas 300 React', price: 32, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'bagsInfoId12', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/i (11).webp', title: 'Bag Adidas 300 React', price: 32, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         }
     ])
 
     // Sneakers Informations
     const [sneakersInfo, setSneakersInfo] = useState([
         {
-            id: 'sneakersInfoId1', caty: 'nike', color: 'a', count: '0', img: './img/sneakers.webp', title: 'Sneakers Max 250 React', price: 99, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId1', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sneakers.webp', title: 'Sneakers Max 250 React', price: 99, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId2', caty: 'airmax', color: 'b', count: '0', img: './img/sneakers(1).webp', title: 'Sneakers Airmax 250 React', price: 100, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId2', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/sneakers(1).webp', title: 'Sneakers Airmax 250 React', price: 100, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId3', caty: 'nike', color: 'a', count: '0', img: './img/sneakers(2).webp', title: 'Sneakers Max 250 React', price: 55, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId3', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sneakers(2).webp', title: 'Sneakers Max 250 React', price: 55, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId4', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sneakers(3).webp', title: 'Sneakers Adidas 250 React', price: 62, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId4', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sneakers(3).webp', title: 'Sneakers Adidas 250 React', price: 62, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId5', caty: 'vans', color: 'd', count: '0', img: './img/sneakers(4).webp', title: 'Sneakers Vans 250 React', price: 48, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId5', like: false, caty: 'vans', color: 'd', count: '0', img: './img/sneakers(4).webp', title: 'Sneakers Vans 250 React', price: 48, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId6', caty: 'nike', color: 'a', count: '0', img: './img/sneakers(5).webp', title: 'Sneakers Max 250 React', price: 33, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId6', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sneakers(5).webp', title: 'Sneakers Max 250 React', price: 33, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId7', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sneakers(6).webp', title: 'Sneakers Adidas 250 React', price: 95, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId7', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sneakers(6).webp', title: 'Sneakers Adidas 250 React', price: 95, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sneakersInfoId8', caty: 'nike', color: 'a', count: '0', img: './img/sneakers(7).webp', title: 'Sneakers Max 250 React', price: 90, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sneakersInfoId8', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sneakers(7).webp', title: 'Sneakers Max 250 React', price: 90, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         }
     ])
 
     // Belt Informations
     const [beltInfo, setBeltInfo] = useState([
         {
-            id: 'beltInfoId1', caty: 'airmax', color: 'b', count: '0', img: './img/belt.webp', title: 'Belt Airmax 250 React', price: 1, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId1', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/belt.webp', title: 'Belt Airmax 250 React', price: 1, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId2', caty: 'nike', color: 'a', count: '0', img: './img/belt(1).webp', title: 'Belt Max 250 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId2', like: false, caty: 'nike', color: 'a', count: '0', img: './img/belt(1).webp', title: 'Belt Max 250 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId3', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/belt(2).webp', title: 'Belt Adidas 250 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId3', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/belt(2).webp', title: 'Belt Adidas 250 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId4', caty: 'vans', color: 'd', count: '0', img: './img/belt(3).webp', title: 'Belt Vans 250 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId4', like: false, caty: 'vans', color: 'd', count: '0', img: './img/belt(3).webp', title: 'Belt Vans 250 React', price: 8, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId5', caty: 'nike', color: 'a', count: '0', img: './img/belt(4).webp', title: 'Belt Max 250 React', price: 13, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId5', like: false, caty: 'nike', color: 'a', count: '0', img: './img/belt(4).webp', title: 'Belt Max 250 React', price: 13, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId6', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/belt(5).webp', title: 'Belt Adidas 250 React', price: 20, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId6', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/belt(5).webp', title: 'Belt Adidas 250 React', price: 20, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId7', caty: 'nike', color: 'a', count: '0', img: './img/belt(6).webp', title: 'Belt Max 250 React', price: 15, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId7', like: false, caty: 'nike', color: 'a', count: '0', img: './img/belt(6).webp', title: 'Belt Max 250 React', price: 15, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'beltInfoId8', caty: 'airmax', color: 'b', count: '0', img: './img/belt(7).webp', title: 'Belt Airmax 250 React', price: 3, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'beltInfoId8', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/belt(7).webp', title: 'Belt Airmax 250 React', price: 3, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
     ])
 
     // Sunglasses Informations
     const [sunglassesInfo, setSunglassesInfo] = useState([
         {
-            id: 'sunglassesInfoId1', caty: 'nike', color: 'a', count: '0', img: './img/sunglasses.webp', title: 'Sunglasses Max 250 React', price: 2, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId1', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sunglasses.webp', title: 'Sunglasses Max 250 React', price: 2, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId2', caty: 'airmax', color: 'b', count: '0', img: './img/sunglasses(1).webp', title: 'Sunglasses Airmax 250 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId2', like: false, caty: 'airmax', color: 'b', count: '0', img: './img/sunglasses(1).webp', title: 'Sunglasses Airmax 250 React', price: 10, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId3', caty: 'nike', color: 'a', count: '0', img: './img/sunglasses(2).webp', title: 'Sunglasses Max 250 React', price: 5, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId3', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sunglasses(2).webp', title: 'Sunglasses Max 250 React', price: 5, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId4', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sunglasses(3).webp', title: 'Sunglasses Adidas 250 React', price: 6, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId4', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sunglasses(3).webp', title: 'Sunglasses Adidas 250 React', price: 6, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId5', caty: 'vans', color: 'd', count: '0', img: './img/sunglasses(4).webp', title: 'Sunglasses Vans 250 React', price: 13, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId5', like: false, caty: 'vans', color: 'd', count: '0', img: './img/sunglasses(4).webp', title: 'Sunglasses Vans 250 React', price: 13, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId6', caty: 'nike', color: 'a', count: '0', img: './img/sunglasses(5).webp', title: 'Sunglasses Max 250 React', price: 12, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId6', like: false, caty: 'nike', color: 'a', count: '0', img: './img/sunglasses(5).webp', title: 'Sunglasses Max 250 React', price: 12, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
         {
-            id: 'sunglassesInfoId7', caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sunglasses(6).webp', title: 'Sunglasses Adidas 250 React', price: 7, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
+            id: 'sunglassesInfoId7', like: false, caty: 'adidas', promo: `${promoCode}`, color: 'e', count: '0', img: './img/sunglasses(6).webp', title: 'Sunglasses Adidas 250 React', price: 7, prev: '534.33', per: '24', about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam voluptate sit voluptas. Id repellat, maiores ea delectus nobis eaque deserunt, non reprehenderit veritatis ratione quidem, ut totam ad sed at. Ratione ipsam quidem sunt minima ex explicabo, rerum ullam."
         },
     ])
 
@@ -365,7 +365,7 @@ function ContextFunc({ children }) {
                     'favorite',
                     JSON.stringify([
                         ...JSON.parse(localStorage.getItem('favorite')),
-                        { ...item }
+                        { ...item, like: true }
                     ])
                 )
             }
@@ -373,7 +373,7 @@ function ContextFunc({ children }) {
                 // Agar Storage'da ma'lumot yo'q bo'lsa
                 localStorage.setItem(
                     'favorite',
-                    JSON.stringify([{ ...item }])
+                    JSON.stringify([{ ...item, like: true }])
                 );
             }
             Swal.fire({
@@ -386,11 +386,22 @@ function ContextFunc({ children }) {
             refresh();
         }
         else {
-            Swal.fire(
-                'Warning!',
-                'This product is already in the favorite',
-                'info'
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Removed successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            })
+            localStorage.setItem(
+                'favorite',
+                JSON.stringify(
+                    JSON.parse(localStorage.getItem('favorite')).filter(
+                        (foo) => foo.id !== item.id
+                    )
+                )
             )
+            refresh();
         }
     }
 

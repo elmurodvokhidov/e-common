@@ -121,7 +121,8 @@ export function Add() {
             caty: '',
             prev: '534.33',
             count: '0',
-            per: '24'
+            per: '24',
+            like: false
         })
         refresh();
     }

@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { AiOutlineEye } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
+import { FcLike } from "react-icons/fc";
 import { SlBasket } from "react-icons/sl";
 import { ContextData } from "../context/ContextData"
 import { Footer } from "../Footer";
@@ -39,7 +40,7 @@ export function Bags() {
                                     <div className="bSC_img">
                                         <div className="bSCI_modal">
                                             <div className="bSCIM_icons">
-                                                <button className="likeIcon" onClick={() => likeFunc(item)}><span><FaRegHeart /></span></button>
+                                                <button className="likeIcon" onClick={() => likeFunc(item)}><span>{item.like ? <FcLike /> : <FaRegHeart />}</span></button>
                                                 <button className="likeIcon basketIcon" onClick={() => basketFunc(item)}><span><SlBasket /></span></button>
                                                 <button className="likeIcon basketIcon" onClick={() => aboutPFunc(item)}><span><AiOutlineEye /></span></button>
                                             </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { AiOutlineEye } from 'react-icons/ai';
 import { FaRegHeart } from 'react-icons/fa';
+import { FcLike } from 'react-icons/fc';
 import { SlBasket } from 'react-icons/sl';
 // import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import ReactPaginate from 'react-paginate';
@@ -74,7 +75,7 @@ export function PaginateST() {
                                     <div className="bSC_img">
                                         <div className="bSCI_modal">
                                             <div className="bSCIM_icons">
-                                                <button className="likeIcon" onClick={() => likeFunc(item)}><span><FaRegHeart /></span></button>
+                                                <button className="likeIcon" onClick={() => likeFunc(item)}>{item.like === true ? <span><FcLike /></span> : <span><FaRegHeart /></span>}</button>
                                                 <button className="likeIcon basketIcon" onClick={() => basketFunc(item)}><span><SlBasket /></span></button>
                                                 <button className="likeIcon basketIcon" onClick={() => aboutPFunc(item)}><span><AiOutlineEye /></span></button>
                                             </div>
