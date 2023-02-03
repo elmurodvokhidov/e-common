@@ -4794,7 +4794,7 @@ td {
 
     .mFP_footer a {
         font-size: 20px;
-        /* text-decoration: none; */
+        text-decoration: none;
         color: #223263;
     }
 
@@ -5951,9 +5951,9 @@ td {
         display: none;
     }
 
-    .show {
+    /* .show {
         display: none;
-    }
+    } */
     .sort1 {
         display: none;
     }
