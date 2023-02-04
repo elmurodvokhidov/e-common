@@ -92,7 +92,7 @@ export function Basket() {
                                                     <p>{val.title}</p>
                                                 </div>
                                             </td>
-                                            <td>${val.count > 1 ? val.price * val.count : val.price}</td>
+                                            <td>${val.count > 1 ? (val.price * (100 - val.discount) / 100) * val.count : (val.price * (100 - val.discount) / 100)}</td>
                                             <td>
                                                 <div className="count">
                                                     <button onClick={() => decFunc(val)}>-</button>
@@ -100,7 +100,7 @@ export function Basket() {
                                                     <button onClick={() => incFunc(val)}>+</button>
                                                 </div>
                                             </td>
-                                            <td>${val.prev}</td>
+                                            <td>${val.price * (100 - val.discount) / 100}</td>
                                         </tr>
                                     )) : <tr className="basketNF"><td colSpan={10}>Information not found!</td></tr>
                             }
@@ -132,7 +132,7 @@ export function Basket() {
                             <div className="chO_footer">
                                 <div className="total">
                                     <h1>TOTAL</h1>
-                                    <h1>${info[0].basket.reduce((a, b) => a + b.count * b.price, 0)}</h1>
+                                    <h1>${info[0].basket.reduce((a, b) => a + b.count * (b.price * (100 - b.discount) / 100), 0)}</h1>
                                 </div>
                                 <button onClick={checkFunc}>Check Out</button>
                             </div>

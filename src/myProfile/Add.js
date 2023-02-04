@@ -119,9 +119,9 @@ export function Add() {
             id: '',
             color: '',
             caty: '',
-            prev: '534.33',
+            // prev: '534.33',
             count: '0',
-            per: '24',
+            discount: '',
             like: false
         })
         refresh();
@@ -210,9 +210,16 @@ export function Add() {
                                             <input onInput={(e) => collect(e)} autoComplete='current-password' value={input.about} type="text" name="about" id="about" placeholder="About" />
                                         </div>
 
-                                        <div className="input">
-                                            <label htmlFor="price">Price</label>
-                                            <input onInput={(e) => collect(e)} autoComplete='current-password' value={input.price} type="number" name="price" id="price" placeholder="Price" />
+                                        <div className="select">
+                                            <div className="input">
+                                                <label htmlFor="price">Price</label>
+                                                <input onInput={(e) => collect(e)} autoComplete='current-password' value={input.price} type="number" name="price" id="price" placeholder="Price" />
+                                            </div>
+
+                                            <div className="input">
+                                                <label htmlFor="discount">Discount</label>
+                                                <input onInput={(e) => collect(e)} autoComplete='current-password' value={input.discount} type="number" name="discount" id="discount" placeholder="Discount" />
+                                            </div>
                                         </div>
 
                                         <div className="select">

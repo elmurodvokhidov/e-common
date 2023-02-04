@@ -53,7 +53,7 @@ export function Sneakers() {
                                         <BasicRating />
                                     </div>
                                     <div className="bSC_footer">
-                                        <h4><span>${item.price}</span><del>${item.prev}</del><span>{item.per}% OFF</span></h4>
+                                        <h4><span>${item.price * (100 - item.discount) / 100}</span><del>${item.price}</del><span>{item.discount}% OFF</span></h4>
                                     </div>
                                 </div>
                             ))
