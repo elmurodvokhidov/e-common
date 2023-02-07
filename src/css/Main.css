@@ -3022,6 +3022,10 @@ td {
     color: silver;
 }
 
+.accFF .select .input {
+    width: 45%;
+}
+
 
 /* ------------------ Media --------------------------------------------------------------------------------------------------- */
 
@@ -7922,6 +7926,16 @@ td {
     }
 }
 
+/* Mobile L | 415px */
+@media (max-width: 416px) {
+    .pP_footer .bS_wrapper {
+        width: 350%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 20px;
+    }
+}
+
 /* Mobile L | 400px */
 @media (max-width: 401px) {
     .phoneNavbar {
@@ -8024,6 +8038,16 @@ td {
 
     .profile .editProfile form {
         width: 95%;
+    }
+
+    .pagination1 li:nth-child(2) a {
+        padding: 7px 16px;
+    }
+
+    .pageNum {
+        padding: 7px 14px;
+        cursor: pointer;
+        font-size: 16px;
     }
 }
 
