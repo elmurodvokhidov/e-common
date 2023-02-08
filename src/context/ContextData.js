@@ -222,7 +222,7 @@ function ContextFunc({ children }) {
         {
             favorite: JSON.parse(localStorage.getItem('favorite')) || [],
             basket: JSON.parse(localStorage.getItem('basket')) || [],
-            hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'true'),
+            hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'false'),
             loadMore: localStorage.getItem('loadMoreState') ? JSON.parse(localStorage.getItem('loadMoreState')) : localStorage.setItem('loadMoreState', 'true'),
             profile: JSON.parse(localStorage.getItem('profile')) || [],
             // footer: JSON.parse(localStorage.getItem('footer')) || localStorage.setItem('footer', 'true'),
@@ -241,7 +241,7 @@ function ContextFunc({ children }) {
             {
                 favorite: JSON.parse(localStorage.getItem('favorite')) || [],
                 basket: JSON.parse(localStorage.getItem('basket')) || [],
-                hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'true'),
+                hotDeal: localStorage.getItem('hotDealState') ? JSON.parse(localStorage.getItem('hotDealState')) : localStorage.setItem('hotDealState', 'false'),
                 loadMore: localStorage.getItem('loadMoreState') ? JSON.parse(localStorage.getItem('loadMoreState')) : localStorage.setItem('loadMoreState', 'true'),
                 profile: JSON.parse(localStorage.getItem('profile')) || [],
                 // footer: JSON.parse(localStorage.getItem('footer')) || localStorage.setItem('footer', 'true'),
@@ -294,17 +294,13 @@ function ContextFunc({ children }) {
 
     // HotDeal True False Function
     function hotDealTF() {
-        if (localStorage.getItem('hotDealState') === 'false') {
-            localStorage.setItem('hotDealState', 'true')
-        }
+        localStorage.setItem('hotDealState', 'true')
         refresh();
     }
 
     // HotDeal False True Function
     function hotDealFT() {
-        if (localStorage.getItem('hotDealState') === 'true') {
-            localStorage.setItem('hotDealState', 'false')
-        }
+        localStorage.setItem('hotDealState', 'false')
         refresh();
     }
 
