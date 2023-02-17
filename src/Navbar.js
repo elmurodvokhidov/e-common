@@ -1,6 +1,6 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { SlBasket } from "react-icons/sl";
-import { BsInfo, BsPerson } from "react-icons/bs";
+import { BsPerson } from "react-icons/bs";
 import { HiOutlineMenu } from "react-icons/hi";
 import { AiOutlineSearch, AiFillCaretDown, AiOutlineHeart, AiOutlineLeft } from "react-icons/ai";
 import { useContext } from "react";
@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export function Navbar(prop) {
 
-    const { basketInfo, info, profileFunc, homeLink } = useContext(ContextData);
+    const { info, profileFunc, homeLink } = useContext(ContextData);
 
     const [modalFP, setModalFP] = useState(false);
 
@@ -111,14 +111,14 @@ export function Navbar(prop) {
                                         <div className="dWC_main">
                                             <ul>
                                                 <li><NavLink>Coporate Shoes</NavLink></li>
-                                                <li><NavLink>Sneakers</NavLink></li>
+                                                <li><NavLink to={'/sneakers'}>Sneakers</NavLink></li>
                                                 <li><NavLink>Sandals</NavLink></li>
                                                 <li><NavLink>Sport Shoe</NavLink></li>
                                                 <li><NavLink>Trainers</NavLink></li>
                                             </ul>
                                             <ul>
                                                 <li><NavLink>Coporate Shoes</NavLink></li>
-                                                <li><NavLink>Sneakers</NavLink></li>
+                                                <li><NavLink to={'/sneakers'}>Sneakers</NavLink></li>
                                                 <li><NavLink>Sandals</NavLink></li>
                                                 <li><NavLink>Sport Shoe</NavLink></li>
                                                 <li><NavLink>Trainers</NavLink></li>
@@ -132,17 +132,17 @@ export function Navbar(prop) {
                                         <div className="dWC_main">
                                             <ul>
                                                 <li><NavLink to={'/hotdeal'}>HOT DEAL</NavLink></li>
-                                                <li><NavLink>Sunglasses</NavLink></li>
-                                                <li><NavLink>Belts</NavLink></li>
-                                                <li><NavLink>Belts</NavLink></li>
-                                                <li><NavLink>Sneakers</NavLink></li>
+                                                <li><NavLink to={'/sunglasses'}>Sunglasses</NavLink></li>
+                                                <li><NavLink to={'/belt'}>Belts</NavLink></li>
+                                                <li><NavLink to={'/belt'}>Belts</NavLink></li>
+                                                <li><NavLink to={'/sneakers'}>Sneakers</NavLink></li>
                                             </ul>
                                             <ul>
                                                 <li><NavLink to={'/hotdeal'}>HOT DEAL</NavLink></li>
-                                                <li><NavLink>Sunglasses</NavLink></li>
-                                                <li><NavLink>Belts</NavLink></li>
-                                                <li><NavLink>Belts</NavLink></li>
-                                                <li><NavLink>Sneakers</NavLink></li>
+                                                <li><NavLink to={'/sunglasses'}>Sunglasses</NavLink></li>
+                                                <li><NavLink to={'/belt'}>Belts</NavLink></li>
+                                                <li><NavLink to={'/belt'}>Belts</NavLink></li>
+                                                <li><NavLink to={'/sneakers'}>Sneakers</NavLink></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -153,7 +153,7 @@ export function Navbar(prop) {
                                         <div className="dWC_main">
                                             <ul>
                                                 <li><NavLink>Coporate Shoes</NavLink></li>
-                                                <li><NavLink>Sneakers</NavLink></li>
+                                                <li><NavLink to={'/sneakers'}>Sneakers</NavLink></li>
                                                 <li><NavLink>Sandals</NavLink></li>
                                                 <li><NavLink>Sport Shoe</NavLink></li>
                                                 <li><NavLink>Trainers</NavLink></li>

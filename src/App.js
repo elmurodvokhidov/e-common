@@ -14,6 +14,7 @@ import { HotDealInner } from './pages/HotDealInner';
 import { Profile } from './myProfile/Profile';
 import { Sneakers } from './pages/Sneakers';
 import NotFound from './pages/NotFound';
+import { Sunglasses } from './pages/Sunglasses';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/product" element={<HotDealInner />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/sunglasses" element={<Sunglasses />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
