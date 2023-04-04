@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { SlBasket } from "react-icons/sl";
-import { AiOutlineEye } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import BasicRating from "../layouts/StarRating";
 import Swal from "sweetalert2";
+import { FcLike } from "react-icons/fc";
 
 export const ContextData = React.createContext();
 
@@ -599,7 +600,7 @@ function ContextFunc({ children }) {
                                 <div className="bSC_img">
                                     <div className="bSCI_modal">
                                         <div className="bSCIM_icons">
-                                            <button className="likeIcon" onClick={() => likeFunc(item)}><span><FaRegHeart /></span></button>
+                                                                    <button className="likeIcon" onClick={() => likeFunc(item)}>{info[0].favorite.filter(a => a.id === item.id).length === 0 ? <span><AiOutlineHeart /></span> : <span><FcLike /></span>}</button>
                                             <button className="likeIcon basketIcon" onClick={() => basketFunc(item)}><span><SlBasket /></span></button>
                                             <button className="likeIcon basketIcon" onClick={() => aboutPFunc(item)}><span><AiOutlineEye /></span></button>
                                         </div>

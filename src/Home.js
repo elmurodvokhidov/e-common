@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { AiOutlineEye } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineHeart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 import { SlBasket } from "react-icons/sl";
 import { NavLink } from "react-router-dom";
@@ -8,6 +8,7 @@ import { Footer } from "./Footer";
 import BasicRating from "./layouts/StarRating";
 import { Navbar } from "./Navbar";
 import { Skeleton } from "./skeleton/SkeletonST";
+import { FcLike } from "react-icons/fc";
 
 export function Home() {
 
@@ -169,7 +170,7 @@ export function Home() {
                                                         <div className="bSC_img">
                                                             <div className="bSCI_modal">
                                                                 <div className="bSCIM_icons">
-                                                                    <button className="likeIcon" onClick={() => likeFunc(item)}><span><FaRegHeart /></span></button>
+                                                                    <button className="likeIcon" onClick={() => likeFunc(item)}>{info[0].favorite.filter(a => a.id === item.id).length === 0 ? <span><AiOutlineHeart /></span> : <span><FcLike /></span>}</button>
                                                                     <button className="likeIcon basketIcon" onClick={() => basketFunc(item)}><span><SlBasket /></span></button>
                                                                     <button className="likeIcon basketIcon" onClick={() => aboutPFunc(item)}><span><AiOutlineEye /></span></button>
                                                                 </div>
